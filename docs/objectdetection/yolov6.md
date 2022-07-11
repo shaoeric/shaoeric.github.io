@@ -102,3 +102,21 @@
 <div align=center>
 <img src="../img/objectdetection/yolov6/yolo6.svg"/>
 </div>
+
+## **Loss Function**
+
+- 定位损失：5 * CIOU + L1 loss
+- 置信度损失：BCE loss
+- 分类损失： BCE loss
+
+两个BCE loss和YOLO v3基本保持一致，期望一个anchor可对多种类别的物体做分类，不像softmax一样多类别是互斥的关系。
+
+CIOU损失在YOLO3 SPP时也已经存在了，仓库中还提供了SIOU loss的实现。
+
+没太理解的是L1定位损失。一般像Faster RCNN系列、SSD系列都是采用Smooth L1，期望在回归误差较小时，能够得到平滑的梯度，而且零点处可导。希望各位前辈可以解惑。
+
+## 总结
+
+YOLOv6的代码结构确实是不够清晰，不过也有优点，比如对于trick的列举，在未来使用trick时比较方便。而且在开源时，将部署的工作做的比较完善。
+
+在本文分析的过程中，花了大量时间和经历绘制网络结构图，目的是希望能对各个模块有基本认知，但在损失函数部分一笔带过，这是不可取的，目标检测最吸引人的地方就是损失函数部分，只是这个代码确实难懂。
