@@ -4,5 +4,6 @@
   * [3. pip换源](environment/pip换源.md)
   * [4. 挂载硬盘](environment/Ubuntu硬盘挂载.md)
   * [5. VSCode配置c/c++/cmake环境](environment/VSCode配置c++与cmake环境.md)
+  * [6. Ubuntu更改用户密码](environment/Ubuntu更改用户名密码.md)
 * 目标检测
   * [1. YOLO V6](objectdetection/yolov6.md)
