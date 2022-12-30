@@ -35,7 +35,7 @@ plt.plot(x, y, label='测试$y=e^{2x}$')
 
 plt.legend(loc='best', prop=zh_font)
 
-# plt.tick_params(labelcolor='none', top=0.891, bottom=0.2, left=0.149, right=0.845)  # 调边界位置
+# plt.subplots_adjust(left=0.102, bottom=0.115, right=0.990, top=0.990, hspace=0.2,wspace=0.2)
 plt.xlabel(u'横轴', **font_dict)
 plt.ylabel(r'纵轴$\times 10^{6}$', **font_dict)  # 反斜杠有特殊含义 所以用raw string,或者用\\times
 
@@ -46,11 +46,11 @@ formatter = FuncFormatter(formatnum)
 ax.yaxis.set_major_formatter(formatter)  # y轴用1e6表示
 
 
-plt.yticks(**font_dict)
-plt.xticks(fontproperties='Times New Roman', size=font_size)
+plt.yticks(**font_dict)  # 自定义字体
+plt.xticks(fontproperties='Times New Roman', size=font_size)  # 系统自带字体
 plt.show()
 
-# f.savefig('保存路径.tif', dpi=300)
+# plt.savefig("xxx.tif", bbox_inches='tight', pad_inches=0)
 ```
 
 <div align=center>
