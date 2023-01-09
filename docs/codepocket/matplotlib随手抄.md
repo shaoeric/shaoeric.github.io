@@ -80,10 +80,9 @@ zh_font_dict = {
     'fontproperties': zh_font,
     'size': font_size
 }
-en_font = FontProperties(fname='Times New Roman.ttf', size=font_size)
 en_font_dict = {
-    'fontproperties': zh_font,
-    'size': en_font
+    'fontproperties': en_font,
+    'size': font_size
 }
 
 sns.set_context('paper',font_scale=1.5,rc={"lines.linewidth": 1.7})
