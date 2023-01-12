@@ -9,5 +9,6 @@
   * [8. Ubuntu程序开机自启动](environment/Ubuntu程序开机自启动.md)
 * 代码库
   * [1. Matplotlib随手抄](codepocket/matplotlib随手抄.md)
+  * [2. 并发编程](codepocket/并发编程.md)
 * 目标检测
   * [1. YOLO V6](objectdetection/yolov6.md)
