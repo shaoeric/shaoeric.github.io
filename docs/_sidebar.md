@@ -7,6 +7,10 @@
   * [6. Ubuntu更改用户密码](environment/Ubuntu更改用户名密码.md)
   * [7. Ubuntu安装labelimg](environment/Ubuntu安装labelimg.md)
   * [8. Ubuntu程序开机自启动](environment/Ubuntu程序开机自启动.md)
+  * [9. TensorRT安装](environment/TensorRT安装.md)
+  * [10. pre-commit](environment/pre-commit.md)
+  * [11. docker使用](environment/docker使用.md)
+  * [12. zsh安装](environment/zsh安装.md)
 * 代码库
   * [1. Matplotlib随手抄](codepocket/matplotlib随手抄.md)
   * [2. 并发编程](codepocket/并发编程.md)
